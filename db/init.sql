@@ -1,15 +1,12 @@
-CREATE DATABASE employees;
-USE employees;
+-- Active: 1698785398409@@127.0.0.1@3306
+CREATE DATABASE users;
+USE users;
 
 
-CREATE TABLE employee_data (
-  Employee_Name VARCHAR(50),
-  Title VARCHAR(50)
+CREATE TABLE user_data (
+  User_Name VARCHAR(50),
+  Email VARCHAR(50),
+  Register_Date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 
-INSERT INTO employee_data
-  (Employee_Name, Title)
-VALUES
-  ('Amit Khanna', 'Manager'),
-  ('Anjali Gupta', 'Engineer');
